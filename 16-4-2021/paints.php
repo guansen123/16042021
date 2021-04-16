@@ -7,10 +7,20 @@ class Paint extends Clothes{
 
     public function __construct($outsidename,$outsidePrize,$outsidelength,$outsidewaist){
         parent::__construct($outsidename,$outsidePrize);
+        $this->setName =($outsidename);
+        $this->setPrize = ($outsidePrize);
         $this->length = $outsidelength;
         $this->waist = $outsidewaist;
 
     }
+    public function setName($outsideName)
+    {
+        $this->name= $outsideName;
+    }    
+    public function setPrize($outsideprize)
+    {
+        $this->prize= $outsideprize;
+    }    
     public function setlength($outsidelength){
         $this->length = $outsidelength;
     }
