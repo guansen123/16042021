@@ -7,7 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="./answer.php">
+    <form action="./answer.php" method="POST" autocapitalize="on">
+        <label for="name" >First Name</label><br>
+        <input type="text" name="fname" id="fname"><br>
+        <label for="name" >Last Name</label><br>
+        <input type="text" name="lname" id="lname"><br>
+        <label for="email" >Email</label><br>
+        <input type="email" name="email" id="email"><br>
+        <br>
         <label for="ex1">請問你喜歡哪一個顏色的車子?</label><br>
         <input type="radio" name="ex1" id="color1">Red</input><br>
         <input type="radio" name="ex1" id="color2">Blue</input><br>
